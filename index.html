@@ -61,6 +61,52 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-HEXO-のセットアップ" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/translatex/2015/07/13/HEXO-のセットアップ/" class="article-date">
+  <time datetime="2015-07-13T09:06:20.000Z" itemprop="datePublished">2015-07-13</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/translatex/2015/07/13/HEXO-のセットアップ/">HEXO のセットアップ</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="HEXO_のセットアップ">HEXO のセットアップ</h1><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm <span class="operator"><span class="keyword">install</span> hexo-deployer-git <span class="comment">--save</span></span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>github repository の作成</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo init translatex</span><br><span class="line"><span class="built_in">cd</span> translatex</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure>
+<p>_config.yml を編集。</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">deploy:&#10;  type: git&#10;  repo: https://github.com/NAKADANobuhiro/translatex.git&#10;#  repo: git@github.com:NAKADANobuhiro/translatex.git&#10;  branch: gh-pages&#10;  message: message</span><br></pre></td></tr></table></figure>
+<p><a href="http://hexo.io/docs/deployment.html" target="_blank" rel="external">http://hexo.io/docs/deployment.html</a> に接続できない…</p>
+<p>\node_modules\hexo-server\index.js を編集</p>
+<figure class="highlight axapta"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">hexo <span class="keyword">server</span></span><br><span class="line"></span><br><span class="line">hexo generate</span><br><span class="line"></span><br><span class="line">hexo deploy</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://nakadanobuhiro.github.io/translatex/2015/07/13/HEXO-のセットアップ/" data-id="cic1p6yia0000s4j721a13wbc" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/translatex/2015/07/13/hello-world/" class="article-date">
@@ -96,7 +142,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://nakadanobuhiro.github.io/translatex/2015/07/13/hello-world/" data-id="cic1od4sp0000l0j7zwvt2nfp" class="article-share-link">Share</a>
+      <a data-url="http://nakadanobuhiro.github.io/translatex/2015/07/13/hello-world/" data-id="cic1p6yih0001s4j79r87xwl5" class="article-share-link">Share</a>
       
       
     </footer>
@@ -121,7 +167,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/translatex/archives/2015/07/">July 2015</a><span class="archive-list-count">1</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/translatex/archives/2015/07/">July 2015</a><span class="archive-list-count">2</span></li></ul>
     </div>
   </div>
 
@@ -131,6 +177,10 @@
     <h3 class="widget-title">Recents</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/translatex/2015/07/13/HEXO-のセットアップ/">HEXO のセットアップ</a>
+          </li>
         
           <li>
             <a href="/translatex/2015/07/13/hello-world/">Hello World</a>
